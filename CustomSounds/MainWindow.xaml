@@ -1,0 +1,16 @@
+﻿<Window x:Class="CustomSounds.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomSounds"
+        mc:Ignorable="d"
+        Title="Minecraft: Sound Customizer" Height="350" Width="525">
+    <Grid Background="#FF4156B8">
+        <Button x:Name="button" Content="Edit Music Disks" HorizontalAlignment="Left" Margin="336,183,0,0" VerticalAlignment="Top" Width="94" Click="button_Click"/>
+        <Button x:Name="button1" Content="Edit Game Sounds (Coming Soon...)" HorizontalAlignment="Left" Margin="65,183,0,0" VerticalAlignment="Top" Width="198" IsEnabled="False"/>
+        <Label x:Name="label" Content="Sound Changer" HorizontalAlignment="Left" Margin="166,44,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
+        <Label x:Name="label_Copy" Content="Made by CraftyGaming ---&gt; GeARCraft1" HorizontalAlignment="Left" Margin="278,283,0,0" VerticalAlignment="Top" Foreground="White" Width="229"/>
+
+    </Grid>
+</Window>

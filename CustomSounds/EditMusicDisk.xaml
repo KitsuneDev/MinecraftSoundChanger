@@ -1,0 +1,44 @@
+﻿<Window x:Class="CustomSounds.EditMusicDisk"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomSounds"
+        mc:Ignorable="d"
+        Title="Music Disk Editor" Height="300.84" Width="589.076" Closing="Window_Closing">
+    <Grid Background="#FF1D93E4">
+        <Label x:Name="label" Content="Music Disk Editor" HorizontalAlignment="Left" Margin="65,2,0,0" VerticalAlignment="Top" FontSize="21.333" Foreground="White"/>
+        <ListView x:Name="waitingList" HorizontalAlignment="Left" Height="208" Margin="349,28,0,0" VerticalAlignment="Top" Width="212">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="label_Copy" Content="Waiting:" HorizontalAlignment="Left" Margin="366,2,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="117,185,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <ComboBox x:Name="diskSelector" HorizontalAlignment="Left" Margin="117,73,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="11"/>
+            <ListBoxItem Content="13"/>
+            <ListBoxItem Content="blocks"/>
+            <ListBoxItem Content="cat"/>
+            <ListBoxItem Content="chirp"/>
+            <ListBoxItem Content="far"/>
+            <ListBoxItem Content="mall"/>
+            <ListBoxItem Content="mellohi"/>
+            <ListBoxItem Content="stal"/>
+            <ListBoxItem Content="strad"/>
+            <ListBoxItem Content="wait"/>
+            <ListBoxItem Content="ward"/>
+        </ComboBox>
+        <Label x:Name="label_Copy1" Content="Disk to override:" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy2" Content="Disk Audio OGG:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="button1" Content="OGG???" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="96" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Select" HorizontalAlignment="Left" Margin="117,123,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Apply, generate, export RP " HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="349,241,0,0" Click="button3_Click"/>
+        <Label x:Name="label_Copy3" Content="After you export/install, close this window to erase all!" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy4" Content="RP = Resource Pack" HorizontalAlignment="Left" Margin="10,219,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy5" Content="Made by CraftyGaming ---&gt; GeARCraft1" HorizontalAlignment="Left" Margin="43,28,0,0" VerticalAlignment="Top" Foreground="White" Width="229"/>
+
+    </Grid>
+</Window>
