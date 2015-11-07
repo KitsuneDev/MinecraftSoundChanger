@@ -84,7 +84,7 @@ namespace CustomSounds
                 // add this map file into the "images" directory in the zip archive
                 zip.AddFile("pack.mcmeta");
                 // add the report into a different directory in the archive
-                zip.AddDirectory("assets");
+                zip.AddItem("assets");
                 zip.AddFile("lcrm");
                 zip.Save("CustomSoundInjector_ResourcePack.zip");
             }
