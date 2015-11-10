@@ -46,7 +46,7 @@
     <ROW File="Ionic.Zip.dll" Component_="Ionic.Zip.dll" FileName="IONICZ~1.DLL|Ionic.Zip.dll" Attributes="0" SourcePath="CustomSounds\bin\Release\Ionic.Zip.dll" SelfReg="false" NextFile="CustomSounds.exe.config"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="FinalRelease" PackageFileName="CustomSoundsFinalReleaseRAW" Languages="pt_BR" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="..\..\..\..\Downloads\1447217427_24-device-installed-512x512.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="CustomSoundsFinalRelease"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="FinalRelease" PackageFileName="CustomSoundsFinalReleaseRAW" Languages="pt_BR" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="1447217427_24-device-installed-512x512.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="CustomSoundsFinalRelease"/>
     <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
