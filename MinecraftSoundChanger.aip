@@ -55,7 +55,7 @@
     <ROW Path="&lt;AI_DICTS&gt;ui_pt.ail"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
-    <ROW DigitalCertificate="..\..\CraftyGaming CodeSign.cer" PrivateKey="..\..\CodeSign\GC\CodeSign.pvk" TimeStampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SignerDescription="[|ProductName]" SignOptions="7" SignTool="1"/>
+    <ROW DigitalCertificate="..\..\CraftyGaming CodeSign.cer" PrivateKey="..\..\CodeSign\GC\CodeSign.pvk" TimeStampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SignerDescription="[|ProductName]" SignOptions="0" SignTool="1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
     <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
