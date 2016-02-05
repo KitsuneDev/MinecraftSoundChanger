@@ -17,7 +17,7 @@
         </ListView>
         <Label x:Name="label_Copy" Content="Waiting:" HorizontalAlignment="Left" Margin="366,2,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="117,185,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <ComboBox x:Name="diskSelector" HorizontalAlignment="Left" Margin="117,73,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="diskSelector" HorizontalAlignment="Left" Margin="117,73,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="diskSelector_SelectionChanged">
             <ListBoxItem Content="11"/>
             <ListBoxItem Content="13"/>
             <ListBoxItem Content="blocks"/>

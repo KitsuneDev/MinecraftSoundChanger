@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.IO;
-using System.IO.Packaging;
 using Ionic.Zip;
 using Microsoft.Win32;
 
@@ -35,7 +23,21 @@ namespace CustomSounds
         private void button_Click(object sender, RoutedEventArgs e)
         {
             waitingList.Items.Add(tomodifyname);
-            File.Copy(tomodifyoggorigin, "C:/tmp/soundpcker/assets/minecraft/sounds/records/" + tomodifyname + ".ogg", true);
+            diskSelector.Items.Remove(tomodifyname);
+            if (tomodifyname == null)
+            {
+                MessageBox.Show("Missing Disk Selection!", "Missing Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else if (tomodifyoggorigin == null)
+            {
+                MessageBox.Show("Missing OGG Selection!", "Missing Information", MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+            }
+            else
+            {
+                File.Copy(tomodifyoggorigin,
+                    "C:/tmp/soundpcker/assets/minecraft/sounds/records/" + tomodifyname + ".ogg", true);
+            }
 
         }
 
@@ -50,14 +52,17 @@ namespace CustomSounds
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            tomodifyname = diskSelector.Text.ToString();
+            
 
             
             Directory.SetCurrentDirectory("C:/tmp/soundpcker/assets/minecraft/sounds/records");
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-            dlg.DefaultExt = ".ogg";
-            dlg.Filter = "OGG Audio (.ogg)|*.ogg";
-            dlg.Multiselect = false;
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog
+            {
+                DefaultExt = ".ogg",
+                Filter = "OGG Audio |*.ogg",
+                Multiselect = false,
+                Title = "Choose an Audio OGG"
+            };
             bool? result = dlg.ShowDialog();
             if (result == true)
             {
@@ -65,7 +70,7 @@ namespace CustomSounds
             }
             if (result == false)
             {
-                MessageBox.Show("Operation Cancelled.", "Cancelled", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("You Must Select a File!.", "Cancelled", MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
             }
             
@@ -111,6 +116,21 @@ namespace CustomSounds
             Directory.Delete("C:/tmp", true);
             MainWindow mw = new MainWindow();
             mw.Show();
+        }
+
+        private void diskSelector_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (diskSelector.SelectedItem == null)
+            {
+                MessageBox.Show("Please choose a disk!", "Missing Information", MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+                diskSelector.SelectedItem = null;
+                return;
+            }
+            else
+            {
+                tomodifyname = diskSelector.Text.ToString();
+            }
         }
     }
 }

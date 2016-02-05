@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSounds", "CustomSounds\CustomSounds.csproj", "{6A18B38C-03AD-44BB-A0B1-F386D21F1795}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{259D95BE-B61D-4D26-BE9A-46F861CB8655}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,14 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://servidor002:8088/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CustomSounds\\CustomSounds.csproj
-		SccProjectName1 = CustomSounds
-		SccLocalPath1 = CustomSounds
 	EndGlobalSection
 EndGlobal
